@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age ALL</title>
+    <style>
+        @font-face {
+    font-family: 'RiaSans-ExtraBold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2410-1@1.0/RiaSans-ExtraBold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+        @font-face {
+    font-family: 'NanumSquareNeoHeavy';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-eHv.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-eHv.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-eHv.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-eHv.ttf) format("truetype");
+}
+        @font-face {
+    font-family: 'SBAggroB';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+        body {
+            margin: 0;
+            font-family: 'SBAggroB';
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-color: white;
+        }
+
+        .left {
+            width: 50%;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .left .age {
+            font-size: 350px;
+            font-weight: bold;
+            justify-content: center;
+            align-items: center;
+            color: #2366f5;
+        }
+
+        .left .age span {
+            color: #f5a623;
+        }
+
+        .left .text {
+            margin-top: 50px;
+            text-align: center;
+            color: #000000;
+            font-size: 32px;
+            line-height: 1.5;
+            font-family: 'NanumSquareNeoHeavy';
+        }
+
+        .left .notice {
+            margin-top: 10px;
+            background-color: #f8f8f8;
+            padding: 10px;
+            border: 2px solid #f8f8f8bd;
+            border-radius: 0px 0px 0px 0px;
+            color: #1b1b1b;
+            font-size: 24px;
+            text-align: left;
+            font-family: 'NanumSquareNeoHeavy';
+        }
+
+        .logo {
+            width: 50%;
+            background-color: #2ecc71;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            font-family: 'SBAggroB';
+        }
+
+        .logo::before {
+            content: "";
+            position: absolute;
+            width: 70%;
+            height: 70%;
+            background: repeating-linear-gradient(
+                -45deg,
+                white 0,
+                white 10px,
+                #f5a623 10px,
+                #f5a623 20px
+            );
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        }
+
+        .text-logo {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: white;
+            font-size: 36px;
+            font-weight: bold;
+        }
+        .logo span {
+            color: #ffffff;
+            font-family: 'RiaSans-ExtraBold'
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="age">
+                <span>A</span>LL
+            </div>
+            <div class="text">
+                이 스트리밍은 모든 연령의 시청자가 시청할 수 있습니다.
+            </div>
+            <div class="notice">
+                이 스트리밍은 유튜브와 치지직의 가이드라인을 준수하고 있습니다.
+            </div>
+        </div>
+        <div class="logo">
+            <div class="text-logo">
+                HAE<span style="font-size: 32.2px;">SOL</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
